@@ -1,32 +1,19 @@
 <template>
     <div class="footer">
         <div class="news-letter">
-            <h3>Receive event notifications</h3>
-            <form onsubmit="event.preventDefault();">
-                <input type="email" name="useremailreceiveinfo" placeholder="enter your email"
-                    id="useremailreceiveinfo">
-                <input type="submit" value="subscribe">
-            </form>
+            <h3>Amazon</h3>
+          
         </div>
 
         <div class="box-container">
 
-            <div class="box">
-                <h3>our menu</h3>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> taco</router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> burrito</router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> nachos</router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> side food
-                </router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> dessert</router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> drink</router-link>
-            </div>
+
 
             <div class="box">
                 <h3>quick links</h3>
                 <router-link @click="scrollToTop()" to="/"> <i class="fas fa-arrow-right"></i> home</router-link>
                 <router-link @click="scrollToTop()" to="/about"> <i class="fas fa-arrow-right"></i> about</router-link>
-                <router-link @click="scrollToTop()" to="/promotions"> <i class="fas fa-arrow-right"></i> promotions
+                <router-link @click="scrollToTop()" to="/promotions"> <i class="fas fa-arrow-right"></i> Offers
                 </router-link>
                 <router-link @click="scrollToTop()" to="/menu"> <i class="fas fa-arrow-right"></i> menu</router-link>
                 <router-link @click="scrollToTop()" to="/table"> <i class="fas fa-arrow-right"></i> book a table
@@ -52,6 +39,9 @@
             <div class="box">
                 <h3>opening hours</h3>
                 <p>everyday : 7:00am to 10:00pm</p>
+                <h3>Contact us</h3>
+                <p>99999 88888</p>
+                <p>Send Email :<a href = "mailto: amazon@gmail.com"> homely@gmail.com</a></p>
 
             </div>
 
@@ -60,10 +50,10 @@
         <div class="bottom">
 
             <div class="share">
-                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                <a href="https://twitter.com/?lang=en" class="fab fa-twitter"></a>
-                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                <a href="https://www.pinterest.com/" class="fab fa-pinterest"></a>
+                <a href="https://www.facebook.com/kishore.ramesh.7509" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/Kishore151003?t=4wWBoy8mTWPmGgUwwFMsKw&s=03" class="fab fa-twitter"></a>
+                <a href="https://instagram.com/_.kishore._15?igshid=ZGUzMzM3NWJiOQ==" class="fab fa-instagram"></a>
+            
             </div>
 
         </div>
@@ -91,7 +81,7 @@ export default {
 <style scoped>
 /* footer */
 .footer {
-    background: #f7f7f7;
+    background: #768f764d;
     padding: 2rem 9%;
 }
 
@@ -141,6 +131,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1.5rem;
+    justify-items: center;
 }
 
 .footer .box-container .box h3 {

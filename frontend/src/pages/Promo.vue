@@ -1,7 +1,7 @@
 <template>
     <div class="promotions">
         <div class="heading">
-            <span>promotions</span>
+            <span>Offers</span>
             <h3>Best quality with reasonable price</h3>
         </div>
 
@@ -145,10 +145,10 @@
             </div>
 
             <div class="description">
-                <h3>party taco upto 50% off</h3>
+                <h3>Briyani upto 50% off</h3>
                 <ul>
                     <li>
-                        <p>Order more than 10 tacos will get discount 50%</p>
+                        <p>Order more than 10 briyani will get discount 50%</p>
                     </li>
                     <li>
                         <p>Only weekend night</p>
@@ -161,27 +161,9 @@
             </div>
         </div>
 
-        <div class="promotions-item">
-            <div class="content-box">
-                <img src="../assets/images/dis-2.png" alt="">
-            </div>
+    
 
-            <div class="description">
-                <h3>Happy lunch upto 25% extra</h3>
-                <ul>
-                    <li>
-                        <p>Free up size burrito</p>
-                    </li>
-                    <li>
-                        <p>Only lunch from 10am to 2pm</p>
-                    </li>
-                    <li>
-                        <p>Only delivery</p>
-                    </li>
-                </ul>
-                <router-link @click="scrollToTop()" to="/menu" class="btn">order now</router-link>
-            </div>
-        </div>
+        
 
         <div class="promotions-item">
             <div class="content-box">
@@ -192,10 +174,10 @@
                 <h3>New drink 100% Cashback</h3>
                 <ul>
                     <li>
-                        <p>Free 01 Michelada when total bill more than $20</p>
+                        <p>Free 01 Apple when total bill more than Rs.4000</p>
                     </li>
                     <li>
-                        <p>From 23/11/2021 to 12/12/2021</p>
+                        <p>From 23/06/2023 to 12/08/2023</p>
                     </li>
                     <li>
                         <p>Only online payment method</p>

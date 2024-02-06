@@ -3,14 +3,13 @@
         <div class="home-main">
             <div class="content">
                 <span>welcome foodies</span>
-                <h3>Original taste from Mexico 😋</h3>
-                <p>We guarantee to use fresh food with the best quality. Customers will enjoy Mexican cuisine with
-                    explosive, sophisticated flavors.</p>
+                <h3>Good food, good life 😋</h3>
+                <p>“Need food and a good place to eat? Welcome to our humble place where you can eat good food peacefully.”We guarantee to use fresh food with the best quality.</p>
                 <router-link @click="scrollToTop()" to="/menu" class="btn">order now</router-link>
             </div>
             <div class="image">
-                <img src="../assets/images/b.png" alt="" class="home-img">
-                <img src="../assets/images/a.png" alt="" class="home-parallax-img">
+                <img src="../assets/images/c.png" alt="" class="home-img">
+               
             </div>
         </div>
 
@@ -18,17 +17,17 @@
         <div class="home-category">
             <router-link @click="scrollToTop()" to="/menu" class="box">
                 <img src="../assets/images/taco-img.png" alt="">
-                <h3>taco</h3>
+                <h3>Briyani</h3>
             </router-link>
 
             <router-link @click="scrollToTop()" to="/menu" class="box">
                 <img src="../assets/images/burrito-img.png" alt="">
-                <h3>burrito</h3>
+                <h3>Others</h3>
             </router-link>
 
             <router-link @click="scrollToTop()" to="/menu" class="box">
                 <img src="../assets/images/nachos-img.png" alt="">
-                <h3>nachos</h3>
+                <h3>Gravy</h3>
             </router-link>
 
             <router-link @click="scrollToTop()" to="/menu" class="box">
@@ -87,9 +86,7 @@
             <div class="content">
                 <span>why choose us?</span>
                 <h3 class="title">what's make our food delicious!</h3>
-                <p>Food to customers is always guaranteed of the best quality. Our dishes are made by chef Quang (a 5
-                    Michelin stars chef), promising to bring explosive, delicate, impressive flavors. Our delivery
-                    service is very professional, customers can enjoy the same quality at the restaurant</p>
+                <p>Food to customers is always guaranteed of the best quality. Our dishes are made by chefs maha and harsha</p>
                 <router-link @click="scrollToTop()" to="/about" class="btn">read more</router-link>
 
                 <div class="icons-container">
@@ -168,13 +165,14 @@ export default {
 
 .home-main .image {
     flex: 1 1 41rem;
-    margin: 2rem 0;
+  
     pointer-events: none;
 }
 
 .home-main .image .home-img {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
 }
 
 .home-main .home-parallax-img {
@@ -198,7 +196,7 @@ export default {
     padding: 2rem;
     text-align: center;
     border-radius: .5rem;
-    background: #f7f7f7;
+    background: #d0c689;
 }
 
 .home-category .box:hover {

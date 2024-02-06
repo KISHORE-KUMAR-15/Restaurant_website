@@ -1,7 +1,8 @@
 <template>
     <div class="menu-section">
         <div class="heading">
-            <span>menu</span>
+            <span>orders
+            </span>
             <h3>our special dishes</h3>
         </div>
 
@@ -76,37 +77,37 @@
                 <div class="row filter-section">
                     <ul class="filter-option">
                         <li>
-                            <input type="button" name="rPrice" id="rtfPrice" value="2,5" hidden
+                            <input type="button" name="rPrice" id="rtfPrice" value="0,8" hidden
                                 @click="filterPriceBtn($event)" />
-                            <label for="rtfPrice" class="d-flex justify-content-between">$2 - $5 <button
+                            <label for="rtfPrice" class="d-flex justify-content-between">Rs.0 - Rs.80 <button
                                     class="unselect-btn" @click="unselectPriceBtn($event)">X</button></label>
                         </li>
 
                         <li>
-                            <input type="button" name="rPrice" id="rftPrice" value="5,10" hidden
+                            <input type="button" name="rPrice" id="rftPrice" value="8,15" hidden
                                 @click="filterPriceBtn($event)" />
-                            <label for="rftPrice" class="d-flex justify-content-between">$5 - $10 <button
+                            <label for="rftPrice" class="d-flex justify-content-between">Rs.80 - Rs.150 <button
                                     class="unselect-btn" @click="unselectPriceBtn($event)">X</button></label>
                         </li>
 
                         <li>
-                            <input type="button" name="rPrice" id="rttPrice" value="10,12" hidden
+                            <input type="button" name="rPrice" id="rttPrice" value="15,22" hidden
                                 @click="filterPriceBtn($event)" />
-                            <label for="rttPrice" class="d-flex justify-content-between">$10 - $12 <button
+                            <label for="rttPrice" class="d-flex justify-content-between">Rs.150 - Rs.220 <button
                                     class="unselect-btn" @click="unselectPriceBtn($event)">X</button></label>
                         </li>
 
                         <li>
-                            <input type="button" name="rPrice" id="mtPrice" value="12" hidden
+                            <input type="button" name="rPrice" id="mtPrice" value="15" hidden
                                 @click="filterPriceBtn($event)" />
-                            <label for="mtPrice" class="d-flex justify-content-between">{{ ">" }} $12 <button
+                            <label for="mtPrice" class="d-flex justify-content-between">{{ ">" }} Rs.150 <button
                                     class="unselect-btn" @click="unselectPriceBtn($event)">X</button></label>
                         </li>
 
                         <li>
-                            <input type="button" name="rPrice" id="ltPrice" value="2" hidden
+                            <input type="button" name="rPrice" id="ltPrice" value="10" hidden
                                 @click="filterPriceBtn($event)" />
-                            <label for="ltPrice" class="d-flex justify-content-between">{{ "<" }} $2 <button
+                            <label for="ltPrice" class="d-flex justify-content-between">{{ "<" }} Rs.100 <button
                                     class="unselect-btn" @click="unselectPriceBtn($event)">X</button></label>
                         </li>
 
@@ -124,14 +125,14 @@
                         <li>
                             <input type="button" name="rType" id="mType" value="meat" hidden
                                 @click="filterTypeBtn($event)" />
-                            <label for="mType" class="d-flex justify-content-between">meat<button class="unselect-btn"
+                            <label for="mType" class="d-flex justify-content-between">Non-veg<button class="unselect-btn"
                                     @click="unselectTypeBtn($event)">X</button></label>
                         </li>
 
                         <li>
                             <input type="button" name="rType" id="vType" value="vegan" hidden
                                 @click="filterTypeBtn($event)" />
-                            <label for="vType" class="d-flex justify-content-between">vegan<button class="unselect-btn"
+                            <label for="vType" class="d-flex justify-content-between">veg<button class="unselect-btn"
                                     @click="unselectTypeBtn($event)">X</button></label>
                         </li>
 
@@ -145,11 +146,11 @@
                         <input type="button" id="allFilterFoodBtn" name="allFilterFoodBtn" value="all"
                             class="menu-tab-item" @click="filterFoodBtn($event)" />
                         <input type="button" id="tacoFilterFoodBtn" name="tacoFilterFoodBtn" class="menu-tab-item"
-                            value="taco" @click="filterFoodBtn($event)" />
+                            value="briyani" @click="filterFoodBtn($event)" />
                         <input type="button" id="burritoFilterFoodBtn" name="burritoFilterFoodBtn" class="menu-tab-item"
-                            value="burrito" @click="filterFoodBtn($event)" />
+                            value="others" @click="filterFoodBtn($event)" />
                         <input type="button" id="nachosFilterFoodBtn" name="nachosFilterFoodBtn" class="menu-tab-item"
-                            value="nachos" @click="filterFoodBtn($event)" />
+                            value="Gravy" @click="filterFoodBtn($event)" />
                         <input type="button" id="sidesFilterFoodBtn" name="sidesFilterFoodBtn" class="menu-tab-item"
                             value="sides" @click="filterFoodBtn($event)" />
                         <input type="button" id="dessertFilterFoodBtn" name="dessertFilterFoodBtn" class="menu-tab-item"
@@ -162,7 +163,7 @@
                 <div class="row box-container">
                     <div v-for="(f, index) in currentPageItems" :key="index">
                         <div class="box">
-                            <a href="" class="fas fa-heart"></a>
+                            
                             <div class="image">
                                 <img :src="require(`../assets/images/${f.food_src}`)" alt="" />
                             </div>
@@ -182,8 +183,8 @@
                                     <p>{{ f.food_desc }}</p>
                                 </div>
                                 <div class="price">
-                                    ${{ parseFloat(f.food_price) - parseFloat(f.food_discount) }}
-                                    <span v-if="parseFloat(f.food_discount) != 0.00">${{ parseFloat(f.food_price)
+                                    Rs{{ parseFloat(f.food_price) - parseFloat(f.food_discount) }}
+                                    <span v-if="parseFloat(f.food_discount) != 0.00">Rs.{{ parseFloat(f.food_price)
                                     }}</span>
                                 </div>
                                 <button class="btn" @click="addItem(index)">Add to cart</button>
@@ -343,28 +344,28 @@ export default {
         evaluatePrice: function (food, priceRange) {
             this.pageNum = 0;
             var cal = parseFloat(food.food_price) - parseFloat(food.food_discount);
-            if (priceRange == "2,5") {
-                if (2 <= cal && cal <= 5) {
+            if (priceRange == "0,8") {
+                if (0 <= cal && cal <= 80) {
                     return food;
                 }
             }
-            else if (priceRange == "5,10") {
-                if (5 <= cal && cal <= 10) {
+            else if (priceRange == "8,15") {
+                if (80 <= cal && cal <= 150) {
                     return food;
                 }
             }
-            else if (priceRange == "10,12") {
-                if (10 <= cal && cal <= 12) {
+            else if (priceRange == "15,22") {
+                if (15 <= cal && cal <= 220) {
                     return food;
                 }
             }
-            else if (priceRange == "2") {
-                if (cal <= 2) {
+            else if (priceRange == "10") {
+                if (cal <= 100) {
                     return food;
                 }
             }
-            else if (priceRange == "12") {
-                if (cal >= 12) {
+            else if (priceRange == "15") {
+                if (cal >= 150) {
                     return food;
                 }
             }

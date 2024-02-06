@@ -9,14 +9,8 @@
             <div class="about-content">
                 <img src="../assets/images/taco-chefcartoon.png" alt="">
                 <div class="about-content-text">
-                    <p>Our restaurant QFood was founded by Quang (a 5 Michelin stars chef) in 2002 in Vietnam. After
-                        that, thanks to the support of our customers, our brand has been popularized globally in markets
-                        such as Australia, USA, Canada, UK, France, Germany, Belgium, Russia, China, Japan,
-                        Singapore, ... Mexican-style meals, the products that we deliver to customers are always the
-                        best quality products.</p>
-                    <p>Customers can eat at the restaurant to experience the Mexican atmosphere or can order food to be
-                        delivered to their homes.</p>
-                </div>
+                    <p>WE want to serve south Indian food in my restaurant in which people can get south Indian food taste. The hospitality of the Indians are fabulous. In Sanskrit poetry, the three well known words “Atithi Devo Bhava” or the guest is truly your god are the statement of hospitality in India. The Indian cooking is as varied as its culture, languages, regions, and its climate. Every part of India have its own unique food and subtle variation to popular dishes. Fragrant spices are the soul of Indian cooking. Use of particular spices such as Cumin, Ginger, Garlic, coriander and asafoetida provide Indian food its distinct flavour. After 20 years we present you India with a fresh new look, a creative menu offering a blend of contemporary and traditional favorites, a new kitchen & team elevating our food and service, and elegant lighting transforming the entire restaurant. Enjoy our Garden Bar and Patio in the summer and cozy fireplace seating in the winter.
+                    </p></div>
             </div>
         </div>
 
@@ -28,14 +22,14 @@
 
         <div class="row gallery">
             <div class="wrapper">
-                <img src="../assets/images/taco/taco-2.jpg" alt="">
-                <img src="../assets/images/taco/taco-4.jpg" alt="">
-                <img src="../assets/images/burrito/burrito-6.jpg" alt="">
-                <img src="../assets/images/burrito/burrito-2.jpg" alt="">
-                <img src="../assets/images/burrito/burrito-3.jpg" alt="">
-                <img src="../assets/images/nachos/nachos-1.jpg" alt="">
-                <img src="../assets/images/nachos/nachos-2.jpg" alt="">
-                <img src="../assets/images/nachos/nachos-3.jpg" alt="">
+                <img src="../assets/images/briyani/taco-2.jpg" alt="">
+                <img src="../assets/images/briyani/taco-4.jpg" alt="">
+                <img src="../assets/images/others/burrito-6.jpg" alt="">
+                <img src="../assets/images/others/burrito-2.jpg" alt="">
+                <img src="../assets/images/others/burrito-3.jpg" alt="">
+                <img src="../assets/images/gravy/nachos-1.jpg" alt="">
+                <img src="../assets/images/gravy/nachos-2.jpg" alt="">
+                <img src="../assets/images/gravy/nachos-3.jpg" alt="">
                 <img src="../assets/images/dessert/dessert-2.jpg" alt="">
                 <img src="../assets/images/dessert/dessert-6.jpg" alt="">
             </div>
@@ -112,7 +106,7 @@ export default {
     margin-bottom: -52%;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     transform: scale(1);
-    transition: all .25s;
+    transition: all .5s;
 }
 
 .about-section .gallery .wrapper img:nth-child(7n + 1) {
@@ -121,7 +115,7 @@ export default {
 
 .about-section .gallery .wrapper img:hover {
     z-index: 2;
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 @media (max-width: 768px) {

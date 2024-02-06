@@ -102,18 +102,18 @@
 
                             <div class="box-content">
                                 <span>Summary</span>
-                                <h3 class="font-bold total-first-price">${{ calculateSummaryPrice()[0] }}</h3>
+                                <h3 class="font-bold total-first-price">Rs.{{ calculateSummaryPrice()[0] }}</h3>
 
                                 <span>Discount</span>
-                                <h3 class="font-bold total-discount">${{ calculateSummaryPrice()[1] }}</h3>
+                                <h3 class="font-bold total-discount">Rs.{{ calculateSummaryPrice()[1] }}</h3>
 
                                 <span>Delivery fee</span>
-                                <h3 class="font-bold total-delivery">${{ calculateSummaryPrice()[2] }}</h3>
+                                <h3 class="font-bold total-delivery">Rs.{{ calculateSummaryPrice()[2] }}</h3>
 
                                 <hr />
 
                                 <span>Total</span>
-                                <h2 class="font-bold total-sale">${{ calculateSummaryPrice()[3] }}</h2>
+                                <h2 class="font-bold total-sale">Rs.{{ calculateSummaryPrice()[3] }}</h2>
 
                                 <div class="btn-group">
                                     <button class="btn check-out-btn" :disabled="filterFoods.length ? false : true"
@@ -131,7 +131,7 @@
                                 <h3>Support</h3>
                             </div>
                             <div class="box-content text-center">
-                                <h3><i class="fa fa-phone"></i> +84 123 123 123</h3>
+                                <h3><i class="fa fa-phone"></i>99999 88888</h3>
                                 <span class="small">
                                     Please contact with us if you have any questions. We are avalible 24h.
                                 </span>

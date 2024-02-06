@@ -1,13 +1,13 @@
 <template>
     <div class="header">
-        <router-link @click="scrollToTop()" to="/" class="logo"><img src="../assets/images/taco-logo.png" alt="" />QFood
+        <router-link @click="scrollToTop()" to="/" class="logo"><img src="../assets/images/taco-logo.png" alt="" />Amazon Foods
         </router-link>
 
         <nav class="navbar">
             <router-link @click="scrollToTop()" to="/">home</router-link>
             <router-link @click="scrollToTop()" to="/about">about</router-link>
-            <router-link @click="scrollToTop()" to="/promotions">promotions</router-link>
-            <router-link @click="scrollToTop()" to="/menu">menu</router-link>
+            <router-link @click="scrollToTop()" to="/promotions">Offers</router-link>
+            <router-link @click="scrollToTop()" to="/menu">order</router-link>
             <router-link @click="scrollToTop()" to="/table">table</router-link>
         </nav>
 
